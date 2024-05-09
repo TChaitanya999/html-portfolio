@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Shopping</title>
+</head>
+<body>
+  
+    <style>
+        .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+
+.product {
+  margin: 20px;
+  text-align: center;
+  
+}
+
+.product img {
+  width: 200px;
+  height: 200px;
+}
+
+.cart {
+  margin-top: 50px;
+}
+.Scroll {
+            margin-right: 0.7em;
+        }
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.products-row {
+  display: flex;
+  justify-content: space-between; /* Distribute items along the main axis */
+  margin-bottom: 20px; /* Add some space between rows */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+</style>
+<div class="products-row">
+<div class="container">
+  <h1>Online Shopping</h1>
+  <div class="products">
+    <div class="product">
+      <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/c23bd1066d7c4e07a35dadb200ebdde8_9366/CORE_LINEAR_STUNICON_SHOES_Blue_EY2984_01_standard.jpg" alt="Product 1">
+      <h2>adidas shoes</h2>
+      <p>$50</p>
+      <button onclick="addToCart('adidas shoes', 50)">Add to Cart</button>
+    </div>
+    <div class="products">
+      <div class="product">
+        <img src="https://www.jiomart.com/images/product/original/rvrgwpjvsp/bruton-trendy-sports-shoes-for-men-blue-product-images-rvrgwpjvsp-0-202209021256.jpg?im=Resize=(500,630)" alt="Product 1">
+        <h2>BRUTON Trendy Sports Shoes</h2>
+        <p>$50</p>
+        <button onclick="addToCart('BRUTON Trendy Sports Shoes', 50)">Add to Cart</button>
+      </div>
+      <div class="products">
+        <div class="product">
+          <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/87168587-30b5-45e0-97ab-9a0948247276/revolution-7-road-running-shoes-Ws2ZGl.png" alt="Product 1">
+          <h2>Nike Revolution 7 Men's Road Running Shoes</h2>
+          <p>$50</p>
+          <button onclick="addToCart('Nike Revolution 7 Men's Road Running Shoes', 50)">Add to Cart</button>
+        </div>
+        <div class="products">
+          <div class="product">
+            <img src="https://contents.mediadecathlon.com/p2393850/67c2770483263de42d776a5bd55957ac/p2393850.jpg?format=auto&quality=70&f=650x0" alt="Product 1">
+            <h2>MEN'S RUNNING SHOES JOG FLOW </h2>
+            <p>$50</p>
+            <button onclick="addToCart('MEN'S RUNNING SHOES JOG FLOW', 50)">Add to Cart</button>
+          </div>
+          <div class="products">
+            <div class="product">
+              <img src="https://static.nike.com/a/images/t_default/69d9ddb1-9ce0-47bd-850d-f33ab9b0f78e/mc-trainer-2-workout-shoes-WFVXbk.png" alt="Product 1">
+              <h2>Nike MC Trainer 2 Men's Workout Shoes</h2>
+              <p>$50</p>
+              <button onclick="addToCart('Nike MC Trainer 2 Men's Workout Shoes', 50)">Add to Cart</button>
+            </div>
+</div>
+            <div class="products-row">      
+            <div class="products">
+              <div class="product">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230621/tQsK/64928a82d55b7d0c639079cc/-473Wx593H-464175602-grey-MODEL.jpg" alt="Product 1">
+                <h2>Men Checked Slim Fit Shirt</h2>
+                <p>$50</p>
+                <button onclick="addToCart('Men Checked Slim Fit Shirt', 50)">Add to Cart</button>
+              </div>
+              <div class="products">
+                <div class="product">
+                  <img src="https://assets.ajio.com/medias/sys_master/root/20230526/xFfF/647014e9d55b7d0c63088d9b/-473Wx593H-465405529-blue-MODEL.jpg" alt="Product 1">
+                  <h2>THE BEAR HOUSE Checked Spread-Collar Shirt</h2>
+                  <p>$50</p>
+                  <button onclick="addToCart('THE BEAR HOUSE Checked Spread-Collar Shirt', 50)">Add to Cart</button>
+                </div>
+                <div class="products">
+                  <div class="product">
+                    <img src="https://5.imimg.com/data5/ANDROID/Default/2023/11/357623081/HO/BI/TC/192473731/product-jpeg-500x500.jpg" alt="Product 1">
+                    <h2>BURBERRY PREMIUM QUALITY SHIRT</h2>
+                    <p>$50</p>
+                    <button onclick="addToCart('BURBERRY PREMIUM QUALITY SHIRT', 50)">Add to Cart</button>
+                  </div>
+                  <div class="products">
+                    <div class="product">
+                      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSb4FbH2FDsdyZYu7MHT402BFN-Lbe_4BA1ce0sqxPCAxsFrfENAFL7zjWHAAhwrmI4UgJeY7YERcujkZsUEWXFK6nh-FJokTVO6jUh5qs&usqp=CAE" alt="Product 1">
+                      <h2>	
+                        Tommy Hilfiger Pure Cotton Geometric Print Slim Fit Casual Shirt</h2>
+                      <p>$50</p>
+                      <button onclick="addToCart(' Tommy Hilfiger SHIRT', 50)">Add to Cart</button>
+                    </div>
+                    </div>
+  <div class="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items">
+      <!-- Cart items will be displayed here dynamically -->
+    </ul>
+    <p>Total: $<span id="total-price">0</span></p>
+  </div>
+</div>
+<div class="footer3">
+  <p> Inc. All Rights Reserved.
+      <a href="#">Terms</a> ,
+      <a href="#">Privacy</a> &
+      <a href="#">Accessibility</a><br><br>
+      <button>Do Not Sell My Personal Information</button>
+  </p>
+</div>
+
+<script src="onlins shopping.js"></script>
+<script src="let cartItems = [];.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.items {
+  width: 300px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.cart {
+    margin-top: 50px;
+    background-color: bisque;
+    font-size: large;
+}
+.name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.price {
+  font-size: 16px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.info {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+    </style>
+    <header>
+        <h1>Our Products</h1>
+    </header>
+    <main>
+        <div class="section2">
+            <div class="container">
+              <div class="items">
+                <div class="img img1"><img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+                <div class="name">SHOES</div>
+                <P>$50</P>
+                <button onclick="addToCart('Shoes', 50)">Add to Cart</button>
+                <div class="info">Lorem ipsum dolor sit amet consectetur.</div>
+              </div>
+              <div class="items">
+                <div class="img img2"><img src="https://images.pexels.com/photos/3649765/pexels-photo-3649765.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+                <div class="name">MEN's T-SHIRT</div>
+                <P>$6.34</P>
+                <button onclick="addToCart('Mens T-Shirt', 6.34)">Add to Cart</button>
+                <div class="info">Lorem ipsum dolor sit.</div>
+              </div>
+              <div class="items">
+                <div class="img img3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuxQ2I_JxCXf8KzrEqCyfPXwmz5Jyy3VdzyS2cKKiBEDLjeuo1PawO2HlsYXFZUCkxYO0&usqp=CAU" alt=""></div>
+                <div class="name">JEANS</div>
+                <P>$9</P>
+                <button onclick="addToCart('Jeans', 9)">Add to Cart</button>
+                <div class="info">Lorem ipsum dolor sit amet.</div>
+              </div>
+              <div class="items">
+                <div class="img img1"><img src="https://images.pexels.com/photos/8839887/pexels-photo-8839887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+                <div class="name">WATCH</div>
+                <P>$9.1</P>
+                <button onclick="addToCart('Watch', 9.1)">Add to Cart</button>
+                <div class="info">Lorem ipsum dolor sit.</div>
+              </div>
+              <div class="items">
+                <div class="img img1"><img src="https://images.pexels.com/photos/6858618/pexels-photo-6858618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+                <div class="name">SMART PHONE</div>
+                <P>$20</P>
+                <button onclick="addToCart('SMART PHONE', 20)">Add to Cart</button>
+                <div class="info">Lorem ipsum dolor sit.</div>
+              </div>
+              <div class="items">
+                <div class="img img1"><img src="https://images.pexels.com/photos/5552789/pexels-photo-5552789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+                <div class="name">TELEVISION</div>
+                <P>$18</P>
+                <button onclick="addToCart('TELEVISION', 18)">Add to Cart</button>
+                <div class="info">Lorem ipsum dolor sit amet consectetur.</div>
+              </div>
+              <div class="items">
+                <div class="img img1"><img src="https://images.pexels.com/photos/4295985/pexels-photo-4295985.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+                <div class="name">HOODIES</div>
+                <P>$6.7</P>
+                <button onclick="addToCart('HODDIES', 6.7)">Add to Cart</button>
+                <div class="info">Lorem ipsum dolor sit.</div>
+              </div>
+              <div class="items">
+                <div class="img img1"><img src="https://images-cdn.ubuy.co.in/6344bb59a69a5d540e1068ca-elegant-dinnerware-set-dinner-plates.jpg" alt=""></div>
+                <div class="name">DINNER SET</div>
+                <P>$10</P>
+                <button onclick="addToCart('DINNER SET', 10)">Add to Cart</button>
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+              </div>
+              <div class="items">
+                <div class="img img1"><img src="https://images.pexels.com/photos/6463348/pexels-photo-6463348.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+                <div class="name">BLANKETS</div>
+              <P>$9.9</P>
+                <button onclick="addToCart('BLANKETS', 9.9)">Add to Cart</button>
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+              </div>
+              <div class="items">
+                <div class="img img1"><img src="https://images.pexels.com/photos/2659939/pexels-photo-2659939.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+                <div class="name">LAPTOP</div>
+                <P>$99</P>
+                <button onclick="addToCart('LAPTOP', 99)">Add to Cart</button>
+                <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+              </div>
+              <div class="items">
+                <div class="img img1"><img src="https://www.hindustantimes.com/ht-img/img/2023/12/11/550x309/oven_1702285600024_1702285613171.jpg" alt=""></div>
+                <div class="name">MICROWAVE</div>
+                <P>$30</P>
+                <button onclick="addToCart('MICROWAVE', 30)">Add to Cart</button>
+                <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+              </div>
+              <div class="items">
+                <div class="img img1"><img src="https://instacuppastore.com/cdn/shop/products/1_6_1080x.png?v=1626703156" alt=""></div>
+                <div class="name">COFFEE MAKER</div>
+               <P>29.7</P>
+                <button onclick="addToCart('COFFE MAKER', 29.7)">Add to Cart</button>
+                <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+              </div> 
+    </main>
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+          <!-- Cart items will be displayed here dynamically -->
+        </ul>
+        <p>Total: $<span id="total-price">0</span></p>
+      </div>
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+      <script src="e commerce.js"></script>
+    
+</body>
+</html>
